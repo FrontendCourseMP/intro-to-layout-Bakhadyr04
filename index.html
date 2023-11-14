@@ -10,16 +10,17 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
+        <div class="zero-section">
+            <div class="zero wrapper">
+                <a href="#"><img class="first-logo" src="public/pictures/logotype.png" alt="Логотип CFMOTO"></a>
+                <button type="button" class="first-butt-burger"><img src="public/pictures/first-menu.svg"
+                        alt="Меню"></button>
+            </div>
+        </div>
     </header>
     <main>
-        <section>
-            <div class="first-section">
-                <div class="zero wrapper">
-                    <a href="#"><img class="first-logo" src="public/pictures/logotype.png" alt="Логотип CFMOTO"></a>
-                    <button type="button" class="first-butt-burger"><img src="public/pictures/first-menu.svg"
-                            alt="Меню"></button>
-                </div>
+        <section class="first-section">
                 <div class="first-1 wrapper">
                     <h1>Экскурсии на квадроциклах в Геленджике</h1>
                     <p class="first-2">приезжайте за новыми ощущениями и эмоциями!</p>
@@ -38,7 +39,6 @@
                         <span style="margin: 0.2rem 0 0 0.7rem;">scroll</span>
                     </div>
                 </div>
-            </div>
         </section>
         <section>
             <div class="second-section wrapper">
@@ -295,8 +295,9 @@
                 <div class="seventh-0">
                     <div class="seventh-1">
                         <img class="seventh-1-1" src="public/pictures/seventh-box.jpg" alt="Подарочная коробка">
-                        <p class="seventh-1-2">Скидка 10%</p>
-                        <p class="seventh-1-3">на День Рождение</p>
+                        <h3 class="seventh-1-2">Скидка 10%</h3>
+                        <span class="seventh-1-3">на День Рождение</span>
+                        <h3><span></span></h3>
                         <p class="seventh-1-4">в честь Дня Рождения - дарим имениннику скидку 10%</p>
                     </div>
                     <div class="seventh-2">
@@ -318,10 +319,14 @@
                         Подарите незабываемые эмоции - лучший подарок!
                     </p>
                     <div class="eighth-2">
-                        <img class="eighth-2-1" src="public/pictures/eighth-bant.svg" alt="Красный бант">
-                        <p class="eighth-2-2">СЕРТИФИКАТ</p>
-                        <p class="eighth-2-3">Катание на квадроциклах</p>
-                        <img class="eighth-2-4" src="public/pictures/logotype.png" alt="Логотип CFMOTO">
+                        <div style="display: flex;">
+                            <img class="eighth-2-1" src="public/pictures/eighth-bant.svg" alt="Красный бант">
+                            <p class="eighth-2-2">СЕРТИФИКАТ</p>
+                        </div>
+                        <div style="display: flex;">
+                            <p class="eighth-2-3">Катание на квадроциклах</p>
+                            <img class="eighth-2-4" src="public/pictures/logotype.png" alt="Логотип CFMOTO">
+                        </div>
                         <p class="eighth-2-5">Маршрут: Лесная прогулка</p>
                     </div>
                     <p class="eighth-3">Хотите удивить своих близких оригинальным подарком?
@@ -421,6 +426,13 @@
             </div>
         </section>
         <section>
+            
+        </section>
+        <section>
+            
+        </section>
+    </main>
+    <footer class="footer">
             <div class="tenth-section wrapper">
                 <h2 class="tenth-1">Контакты</h2>
                 <img class="tenth-pic" src="public/pictures/tenth-map.jpg" alt="Карта района Геленджика">
@@ -431,11 +443,11 @@
                     </li>
                     <li class="tenth-li2">
                         <img class="tenth-li-1" src="public/pictures/tenth-mail.svg" alt="Почта">
-                        <p class="tenth-li-2">experience@groupgrand.ru</p>
+                        <a href="#" class="tenth-li-2">experience@groupgrand.ru</a>
                     </li>
                     <li class="tenth-li2">
                         <img class="tenth-li-1" src="public/pictures/tenth-phone.svg" alt="Телефон">
-                        <p class="tenth-li-2">+7 928 428-00-62</p>
+                        <a href="#" class="tenth-li-2">+7 928 428-00-62</a>
                     </li>
                     <li class="tenth-li3">
                         <img class="tenth-li-1" src="public/pictures/tenth-time.svg" alt="Время">
@@ -453,8 +465,6 @@
                 </div>
                 <img style="width: 100%; min-height: 0.05rem;" src="public/pictures/black-line.svg" alt="Чёрная линия">
             </div>
-        </section>
-        <section>
             <div class="eleventh-section wrapper">
                 <h2 style="display: none;">Разделы сайта</h2>
                 <div class="eleventh-1">
@@ -484,12 +494,10 @@
                 </div>
                 <img style="width: 100%; min-height: 0.05rem;" src="public/pictures/black-line.svg" alt="Черная линия">
             </div>
-        </section>
-    </main>
-    <footer>
-            <p class="wrapper">© CFMOTO Experience Kuban. Внедорожный полигон
-                CFMOTO и прокат квадроциклов в Геленджике
-            </p>
+                <a href="grid.html">GRID HTML</a>
+                <p class="wrapper">© CFMOTO Experience Kuban. Внедорожный полигон
+                    CFMOTO и прокат квадроциклов в Геленджике
+                </p>
     </footer>
 </body>
 

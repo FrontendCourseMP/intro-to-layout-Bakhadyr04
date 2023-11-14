@@ -60,6 +60,7 @@
 .wrapper {
     max-width: 85rem;
     margin: 0 auto;
+    
 }
 
 body {
@@ -95,7 +96,7 @@ button {
     background-color: var(--wmain-color);
 }
   
-  button:focus {
+button:focus {
     min-width: 0.8rem;
     min-height: 0.8rem;
     border-radius: 50%;
@@ -112,35 +113,47 @@ footer {
     padding: 1.1rem 1rem 0;
 }
 
+header {
+    position: absolute;
+    width: 100%;
+}
+
 .zero {
     background: transparent;
     display: flex;
     justify-content: space-between;
 }
 
-.first-section {
-    background: linear-gradient(0deg, rgba(18, 18, 20, 0.75) 0%, rgba(18, 18, 20, 0.75) 100%),
-    url("../public/pictures/first-background.png");
+.zero-section {
     color: var(--wtext-color);
     background-size: cover;
     background-position: center;
 }
   
+.first-section {
+    background-image: url("../public/pictures/first-background.png");
+    width: 100%;
+    padding: 0;
+}
+
 .first-1 {
-    padding: 9.8rem 3.3rem 0 3.3rem;
+    color: var(--wtext-color);
+    background-size: cover;
+    background-position: center;
+    padding: 16rem 4.5rem 7rem;
 }
   
 .first-2 {
-    padding: 0.8rem 0 2.1rem;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 130%;
-    margin: 0;
+    margin-bottom: 3rem;
+    margin-top: 0.5rem;
 }
   
 .first-3 {
     display: flex;
-    padding: 0 0 10rem 0;
+    justify-content: flex-start;
 }
   
 .first-logo {
@@ -158,14 +171,14 @@ footer {
     background-color: var(--smain-color);
     border-radius: 9px;
     cursor: pointer;
-    margin: 2.1rem 0 10rem;
+    margin-bottom: 12rem;
 }
   
 .first-butt-burger {
     min-width: 2rem;
     min-height: 2rem;
     border: none;
-    padding: 2.1rem 1.8rem;
+    padding: 2.1rem 3rem;
     background-color: transparent;
 }
   
@@ -602,7 +615,7 @@ footer {
 .eighth-section {
     padding: 3.6rem 1rem 4.6rem;
 }
-  
+
 .eighth-1 {
     text-align: center;
     color: var(--stext-color);
@@ -625,15 +638,18 @@ footer {
 .eighth-2-2 {
     font-size: 3rem;
     font-weight: 900;
-    margin: 0 auto;
+    margin: 0;
+    padding: 1.5rem;
 }
-  
+
 .eighth-2-3 {
     color: var(--wtext-color);
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 124%;
-    margin: 0 auto;
+    margin: 0;
+    padding: 1.5rem;
+    width: 25rem;
 }
   
 .eighth-2-4 {
@@ -643,7 +659,11 @@ footer {
   
 .eighth-2-5 {
     color: var(--wtext-color);
-    margin: 0 auto;
+    margin: 0;
+    padding: 0 1.5rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 130%;
 }
   
 .eighth-3 {
@@ -774,11 +794,12 @@ footer {
 }
 
 .tenth-section {
-    padding: 0.95rem 1rem 0;
+    padding: 0;
 }
   
 .tenth-1 {
-    padding: 0 1rem 1.7rem;
+    color: #121214;
+    padding: 0 0 1.7rem;
     text-align: left;
 }
   
@@ -788,7 +809,7 @@ footer {
 }
 
 .tenth-ul {
-    padding: 1.8rem 1.3rem 1.6rem;
+    padding: 1.8rem 0rem 1.6rem;
     margin: 0;
     list-style-type: none;
 }
@@ -827,6 +848,7 @@ footer {
 }
   
 .tenth-li-3-1 {
+    color: var(--btext-color);
     margin: 0;
     font-size: 1.6rem;
     line-height: 130%;
@@ -838,11 +860,12 @@ footer {
   
 .tenth-4 {
     display: flex;
-    padding: 0 0 2.9rem 1.3rem;
+    padding: 0 0 2.9rem 0;
     align-items: center;
 }
   
 .tenth-4-1 {
+    color: var(--btext-color);
     margin: 0;
     font-size: 1.8rem;
     font-weight: 600;
@@ -853,7 +876,7 @@ footer {
 }
 
 .eleventh-section {
-    padding: 1.1rem 1rem 0;
+    padding: 1.1rem 1rem 0 0;
 }
   
 .eleventh-ul {
