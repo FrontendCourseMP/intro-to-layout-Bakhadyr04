@@ -1,3 +1,43 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v26-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v26-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/montserrat-v26-latin-800.woff2') format('woff2');
+}
+
 * {
     box-sizing: border-box;
 }
@@ -20,7 +60,14 @@
 .wrapper {
     max-width: 85rem;
     margin: 0 auto;
-    
+
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.4 rem;
+    font-weight: 400;
+    color: var(--btext-color);
 }
 
 h2 {
@@ -39,7 +86,7 @@ button {
     padding: 0.4rem;
     background-color: var(--wmain-color);
 }
-  
+
 button:focus {
     min-width: 0.8rem;
     min-height: 0.8rem;
@@ -47,13 +94,6 @@ button:focus {
     border: none;
     padding: 0.4rem;
     background-color: var(--smain-color);
-}
-
-body {
-    font-family: Montserrat, sans-serif;
-    font-size: 1.4 rem;
-    font-weight: 400;
-    color: var(--btext-color);
 }
 
 header {
@@ -78,7 +118,7 @@ header {
     min-height: 6.4rem;
     padding: 0.9rem 0 0 2rem;
 }
-  
+
 .first-butt {
     display: flex;
     max-width: 22rem;
@@ -90,7 +130,7 @@ header {
     cursor: pointer;
     margin-bottom: 12rem;
 }
-  
+
 .first-butt-burger {
     min-width: 2rem;
     min-height: 2rem;
@@ -98,14 +138,14 @@ header {
     padding: 2.1rem 3rem;
     background-color: transparent;
 }
-  
+
 .first-butt-pic {
     background-image: url("../public/pictures/first-arrow.svg");
     width: 2.4rem;
     height: 2.4rem;
     margin: 1.05rem 1.2rem 1.05rem 0.7rem;
 }
-  
+
 .first-butt-text {
     color: var(--wtext-color);
     font-size: 1.4rem;
@@ -139,26 +179,26 @@ header {
     grid-row: 1;
     background-color: white;
 }
-  
+
 .grid-2 {
     grid-column: 3;
     grid-row: 1;
     background-color: white;
 }
-  
+
 .grid-3 {
     grid-column: 4;
     grid-row: 1;
     background-color: black;
     color: white;
 }
-  
+
 .grid-4 {
     grid-column: 1;
     grid-row: 2/4;
     background-color: white;
 }
-  
+
 .grid-5 {
     grid-column: 2;
     grid-row: 2/4;
@@ -171,13 +211,13 @@ header {
     background-color: blue;
     color: white;
 }
-  
+
 .grid-7 {
     grid-column: 1/3;
     grid-row: 4/6;
     background-color: yellow;
 }
-  
+
 .grid-8 {
     grid-column: 1/2;
     grid-row: 6/7;
@@ -190,7 +230,7 @@ header {
     background-color: black;
     color: white;
 }
-  
+
 .grid-10 {
     grid-column: 3/5;
     grid-row: 6/7;
@@ -275,7 +315,7 @@ header {
 
 .painting-grid {
     display: grid;
-    max-width: 100px;  
+    max-width: 100px;
 }
 
 .pic-1 {
@@ -353,13 +393,13 @@ footer {
 .tenth-section {
     padding: 0;
 }
-  
+
 .tenth-1 {
     color: #121214;
     padding: 0 0 1.7rem;
     text-align: left;
 }
-  
+
 .tenth-pic {
     width: 36rem;
     height: 21.5rem;
@@ -370,32 +410,32 @@ footer {
     margin: 0;
     list-style-type: none;
 }
-  
+
 .tenth-li1 {
     display: flex;
     padding-bottom: 0.75rem;
     align-items: center;
 }
-  
+
 .tenth-li2 {
     display: flex;
     padding: 0.75rem 0;
     align-items: center;
 }
-  
+
 .tenth-li3 {
     display: flex;
     padding-top: 0.75rem;
     align-items: center;
     align-items: flex-start;
 }
-  
+
 .tenth-li-1 {
     width: 3.9rem;
     height: 3.9rem;
     margin-right: 1.2rem;
 }
-  
+
 .tenth-li-2 {
     margin: 0;
     font-size: 1.6rem;
@@ -403,74 +443,87 @@ footer {
     text-decoration: none;
     color: var(--btext-color);
 }
-  
+
 .tenth-li-3-1 {
     color: var(--btext-color);
     margin: 0;
     font-size: 1.6rem;
     line-height: 130%;
 }
-  
+
 .tenth-3 {
     padding: 0 1rem 0;
 }
-  
+
 .tenth-4 {
     display: flex;
     padding: 0 0 2.9rem 0;
     align-items: center;
 }
-  
+
 .tenth-4-1 {
     color: var(--btext-color);
     margin: 0;
     font-size: 1.8rem;
     font-weight: 600;
 }
-  
+
 .tenth-4-2 {
     margin-left: 1.3rem;
 }
 
+.tenth-5 {
+    background-color: var(--bmain-color);
+    height: 0.1rem;
+    width: 100;
+}
+
 .eleventh-section {
-    padding: 1.1rem 1rem 0 0;
+    margin-bottom: 1.5rem;
 }
-  
+
 .eleventh-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
-  
-.eleventh-li {
-    padding: 0.55rem 0;
-}
-  
+
 .eleventh-li-1 {
+    font-size: 1.4rem;
     font-weight: 600;
     text-decoration: none;
     color: var(--btext-color);
 }
-  
+
 .eleventh-li-2 {
+    font-size: 1.4rem;
     font-weight: 600;
     text-decoration: none;
     color: var(--btext-color);
 }
-  
+
 .eleventh-li-3 {
+    font-size: 1.4rem;
     font-weight: 600;
     text-decoration: none;
     color: var(--btext-color);
 }
-  
+
 .eleventh-1 {
     display: flex;
     gap: auto;
     justify-content: space-between;
 }
-  
+
 .eleventh-1-1 {
     width: 5.4rem;
     height: 6.9rem;
+    padding-top: 1rem;
+}
+
+.eleventh-2 {
+    background-color: var(--bmain-color);
+    height: 0.1rem;
+    width: 100;
 }
