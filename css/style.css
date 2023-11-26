@@ -105,17 +105,17 @@ button:focus {
     background-color: var(--smain-color);
 }
 
+header {
+    position: absolute;
+    width: 100%;
+}
+
 footer {
     color: var(--gtext-color);
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 127%;
     padding: 1.1rem 1rem 0;
-}
-
-header {
-    position: absolute;
-    width: 100%;
 }
 
 .zero {
@@ -616,6 +616,11 @@ header {
 
 .eighth-section {
     padding: 3.6rem 1rem 4.6rem;
+}
+
+.eighth-0 {
+    margin-bottom: 0.7rem;
+    font-weight: 700;
 }
 
 .eighth-1 {
