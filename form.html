@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/stylesgrid.css">
-    <title>Mondrian</title>
+    <link rel="stylesheet" href="css/stylesform.css">
+    <title>Form</title>
 </head>
 
 <body>
@@ -22,78 +22,59 @@
     <main>
 
 
-        <section class="grid wrapper">
-            <div class="grid-content">
-                <div class="grid-1">One</div>
-                <div class="grid-2">Two</div>
-                <div class="grid-3">Three</div>
-                <div class="grid-4">Four</div>
-                <div class="grid-5">Five</div>
-                <div class="grid-6">Six</div>
-                <div class="grid-7">Seven</div>
-                <div class="grid-8">Eight</div>
-                <div class="grid-9">Nine</div>
-                <div class="grid-10">Ten</div>
-            </div>
-        </section>
+        <section class="wrapper">
+            <form action="//httpbin.org/post" method='post' name="regisration">
+                <fieldset class="form-content">
+                    <legend>Personal information</legend>
+                    <label for="name" class="name">
+                        Имя
+                        <input type="text" name="name" id="name" placeholder="Иван" required>
+                    </label>
 
+                    <label class="sex">
+                        Пол
+                        <div>
+                            <input type="checkbox" name="sex" id="sex" value="Male" checked>Мужской
+                            <input type="checkbox" name="sex" id="sex" value="Female">Женский
+                        </div>
+                    </label>
 
-        <section>
-            <div class="dashboard wrapper">
-                <aside class="dashboard-aside">
-                    Aside
-                </aside>
-                <div class="dashboard-content">
-                    <div class="dashboard-1">
-                        <img class="dashboard-img" src="public/pictures/pattern1.jpeg" alt="board">
-                    </div>
-                    <div class="dashboard-2">
-                        <img class="dashboard-img" src="public/pictures/pattern2.jpeg" alt="board">
-                    </div>
-                    <div class="dashboard-2">
-                        <img class="dashboard-img" src="public/pictures/pattern3.jpeg" alt="board">
-                    </div>
-                    <div class="dashboard-2">
-                        <img class="dashboard-img" src="public/pictures/pattern4.jpeg" alt="board">
-                    </div>
-                    <div class="dashboard-3">
-                        <img class="dashboard-img" src="public/pictures/pattern5.jpeg" alt="board">
-                    </div>
-                    <div class="dashboard-3">
-                        <img class="dashboard-img" src="public/pictures/pattern6.jpeg" alt="board">
-                    </div>
-                </div>
-            </div>
-        </section>
+                    <label class="birthday">Дата рождения
+                        <input type="date" name="birthday" id="birthday" placeholder="01.01.2000" required>
+                    </label>
 
+                    <label for="password" class="password">Пароль
+                        <input type="password" name="password" id="password" value="password">
+                        <label><input type="checkbox" class="password-checkbox"> Показать пароль</label>
+                    </label>
 
-        <section>
-            <div class="painting wrapper">
-                <div class="painting-grid">
-                    <img class="painting-img pic-1" src="public/pictures/world.png" alt="world">
-                    <a class="painting-link link-1" href="">LINK</a>
+                </fieldset>
+
+                <fieldset class="form-content">
+                    <legend>Contact information</legend>
+
+                    <label class="email">Email
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                    </label>
+
+                    <label class="tel">Телефон
+                        <input type="tel" name="tel" id="tel" placeholder="86666666666" required>
+                    </label>
+
+                    <label for="daytime" class="daytime">Удобный интервал для связи
+                        <select name="daytime" id="daytime">
+                            <option value="morning">утро</option>
+                            <option value="afternoon">день</option>
+                            <option value="evening">вечер</option>
+                            <option value="night">ночь</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <div class="buttons">
+                    <button type="submit" class="send">Отправить →</button>
+                    <button type="reset" class="reset">Сбросить</button>
                 </div>
-                <div class="painting-grid ">
-                    <img class="painting-img pic-2" src="public/pictures/world.png" alt="world">
-                    <a class="painting-link link-2" href="">LINK</a>
-                </div>
-                <div class="painting-grid">
-                    <img class="painting-img pic-3" src="public/pictures/world.png" alt="world">
-                    <a class="painting-link link-3" href="">LINK</a>
-                </div>
-                <div class="painting-grid">
-                    <img class="painting-img pic-4" src="public/pictures/world.png" alt="world">
-                    <a class="painting-link link-4" href="">LINK</a>
-                </div>
-                <div class="painting-grid">
-                    <img class="painting-img pic-5" src="public/pictures/world.png" alt="world">
-                    <a class="painting-link link-5" href="">LINK</a>
-                </div>
-                <div class="painting-grid">
-                    <img class="painting-img pic-6" src="public/pictures/world.png" alt="world">
-                    <a class="painting-link link-6" href="">LINK</a>
-                </div>
-            </div>
+            </form>
         </section>
 
 

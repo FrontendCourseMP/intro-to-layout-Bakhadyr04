@@ -109,6 +109,11 @@ header {
     width: 100%;
 }
 
+.FORM {
+    font-size: 2rem;
+    color: white;
+}
+
 footer {
     color: var(--gtext-color);
     font-size: 1.2rem;
