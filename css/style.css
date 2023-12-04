@@ -40,6 +40,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -57,10 +59,28 @@
     font-size: 62.5%;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 .wrapper {
-    max-width: 130rem;
+    max-width: 1440px;
+    padding: 0 20px;
     margin: 0 auto;
 }
+
+section {
+    padding: 4rem 0;
+}
+
+.btn-green {}
+
+.btn-brdr {}
+
+.ttl {}
+
+.routes_card-revert {}
 
 body {
     font-family: Montserrat, sans-serif;
@@ -122,6 +142,10 @@ footer {
     padding: 1.1rem 1rem 0;
 }
 
+.navigation-header {
+    display: none;
+}
+
 .zero {
     background: transparent;
     display: flex;
@@ -139,7 +163,11 @@ footer {
         url("../public/pictures/first-background.jpg"), lightgray 50% / cover no-repeat;
     background-size: cover;
     width: 100%;
-    padding: 0;
+    /* padding: 14rem 0; */
+}
+
+.title {
+    max-width: 600px;
 }
 
 .first-1 {
@@ -163,8 +191,8 @@ footer {
 }
 
 .first-logo {
-    min-width: 5rem;
-    min-height: 6.4rem;
+    max-width: 8rem;
+    max-height: 8rem;
     padding: 0.9rem 0 0 2rem;
 }
 
@@ -172,8 +200,8 @@ footer {
     display: flex;
     max-width: 22rem;
     max-height: 4.5rem;
-    min-width: 21.96rem;
-    min-height: 4.5rem;
+    /* min-width: 21.96rem;
+    min-height: 4.5rem; */
     background-color: var(--smain-color);
     border-radius: 9px;
     cursor: pointer;
@@ -204,15 +232,14 @@ footer {
 }
 
 .second-section {
-    padding: 5.6rem 1rem 1.4rem;
+    /* padding: 5.6rem 1rem 1.4rem; */
 }
 
 .second-ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.2rem;
     justify-items: center;
-    padding: 0 4rem 0;
 }
 
 .second-li {
@@ -250,12 +277,20 @@ footer {
 }
 
 .third-ul {
-    padding: 0 4rem 0;
+    /* padding: 0 4rem 0; */
 }
 
 .third-li {
     list-style-type: none;
     padding: 3.7rem 0 7rem;
+}
+
+.third-li-1::after {
+    content: '';
+    border-top: solid 3px var(--smain-color);
+    width: 8rem;
+    display: block;
+    margin-top: 1rem;
 }
 
 .third-li-1 {
@@ -335,7 +370,7 @@ footer {
     display: block;
     padding: 1.2rem 3.9rem;
     color: var(--stext-color);
-    min-width: 16.4rem;
+    /* min-width: 16.4rem; */
     min-height: 4.1rem;
     border: 1.5px solid var(--smain-color);
     border-radius: 0.9rem;
@@ -348,7 +383,7 @@ footer {
     display: block;
     padding: 1.2rem 2.3rem;
     color: var(--wtext-color);
-    min-width: 16.4rem;
+    /* min-width: 16.4rem; */
     min-height: 4.1rem;
     border-radius: 0.9rem;
     background-color: var(--smain-color);
@@ -384,6 +419,11 @@ footer {
     align-items: center;
 }
 
+.third-li-8-3 {
+    display: flex;
+    align-items: center;
+}
+
 .third-li-8-1 {
     background-color: var(--bmain-color);
     margin: 0 0.75rem;
@@ -394,6 +434,10 @@ footer {
     height: 0.1rem;
     min-width: 5.4rem;
     margin: 0 1.4rem 0 3rem;
+}
+
+.fourth {
+    padding-top: 0;
 }
 
 .fourth-section-back {
@@ -427,8 +471,8 @@ footer {
     font-weight: 600;
     line-height: 130%;
     color: var(--wtext-color);
-    min-width: 17.5rem;
-    min-height: 4.5rem;
+    /* min-width: 17.5rem;
+    min-height: 4.5rem; */
     border-radius: 0.9rem;
     background-color: var(--smain-color);
     text-decoration: none;
@@ -437,13 +481,13 @@ footer {
 
 .fourth-4 {
     display: flex;
-    max-width: 85rem;
+    max-width: 100%;
     min-height: 4.5rem;
     justify-content: center;
 }
 
 .fifth-section {
-    padding: 9.5rem 1rem 4.8rem;
+    padding: 4.8rem 1rem 0;
 }
 
 .fifth-1 {
@@ -453,10 +497,10 @@ footer {
 .fifth-ul {
     display: grid;
     justify-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.6rem 2rem;
+    grid-template-columns: repeat(2, 1fr);
     padding: 0 4rem 0;
     max-width: 100%;
+    gap: 1.5rem;
 }
 
 .fifth-li {
@@ -476,15 +520,15 @@ footer {
     line-height: 130%;
     font-weight: 700;
     color: var(--stext-color);
-    margin-top: 0.3rem;
-    padding-left: 0.5rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
 }
 
 .fifth-li-3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 130%;
-    padding: 0 0 0.9rem 0.5rem;
+    padding: 0 0 1rem 1rem;
 }
 
 .sixth-section {
@@ -505,7 +549,7 @@ footer {
 
 .sixth-ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     justify-items: center;
     gap: 1.5rem;
     padding: 0 4rem 0;
@@ -540,6 +584,10 @@ footer {
     font-weight: 600;
 }
 
+.seventh {
+    padding-top: 0;
+}
+
 .seventh-section {
     padding: 2.5rem 1rem 6rem;
 }
@@ -552,7 +600,13 @@ footer {
 }
 
 .seventh-1 {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F4F4F4;
     background-image: url(../public/pictures/seventh-1.svg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
     border-radius: 0.9rem;
     margin-top: 2.7rem;
     justify-self: left;
@@ -583,6 +637,7 @@ footer {
 
 .seventh-1-4 {
     font-size: 1.6rem;
+    font-weight: 400;
     line-height: 120%;
     max-width: 22rem;
     padding: 0.9rem 0 2.2rem 2.1rem;
@@ -595,6 +650,7 @@ footer {
     margin: 2.7rem 0 0;
     justify-self: right;
     position: relative;
+    display: block;
 }
 
 .seventh-2-1 {
@@ -638,6 +694,14 @@ footer {
 
 }
 
+.eighth-section-back {
+    background-color: var(--mmain-color);
+    background-image: url(../public/pictures/eighth-background.svg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
 .eighth-section {
     padding: 3.6rem 1rem 4.6rem;
 }
@@ -656,12 +720,20 @@ footer {
 }
 
 .eighth-2 {
-    background-color: var(--dgmain-color);
+    background: no-repeat url(../public/pictures/eighth-rect.svg);
+    background-position: bottom right;
+    background-size: cover;
     border-radius: 0.9rem;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 0;
+    position: relative;
 }
 
 .eighth-2-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 7.3rem;
     height: 7.3rem;
 }
@@ -671,6 +743,8 @@ footer {
     font-weight: 900;
     margin: 0;
     padding: 1.5rem;
+    /* width: 100%; */
+    margin: 0 0 auto auto;
 }
 
 .eighth-2-3 {
@@ -684,6 +758,10 @@ footer {
 }
 
 .eighth-2-4 {
+    position: absolute;
+    right: 3rem;
+    top: 8rem;
+    bottom: 6rem;
     width: 6rem;
     height: 7.6rem;
     margin-right: 4.7rem;
@@ -702,7 +780,7 @@ footer {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 150%;
-    margin: 0;
+    margin-bottom: 3rem;
     padding: 2.4rem 0 1.4rem;
 }
 
@@ -719,15 +797,7 @@ footer {
 }
 
 .eighth-5 {
-    display: flex;
-}
-
-.eighth-section-back {
-    background-color: var(--mmain-color);
-    background-image: url(../public/pictures/eighth-background.svg);
-    width: 100%;
-    height: 100%;
-    background-size: cover;
+    /* display: flex; */
 }
 
 .ninth-section {
@@ -735,7 +805,7 @@ footer {
 }
 
 .ninth-0 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .ninth-ul {
@@ -875,7 +945,7 @@ footer {
 
 .tenth-li3 {
     display: flex;
-    padding-top: 0.75rem;
+    padding: 0.75rem 0 1.5rem;
     align-items: center;
     align-items: flex-start;
 }
@@ -926,6 +996,7 @@ footer {
     background-color: var(--bmain-color);
     height: 0.1rem;
     width: 100;
+    margin: 0 2rem 0;
 }
 
 .eleventh-section {
@@ -939,37 +1010,23 @@ footer {
     list-style-type: none;
 }
 
-.eleventh-li-1 {
+.eleventh-a {
     font-size: 1.4rem;
     font-weight: 600;
     text-decoration: none;
     color: var(--btext-color);
 }
 
-.eleventh-li-2 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--btext-color);
-}
-
-.eleventh-li-3 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--btext-color);
+.eleventh-logo {
+    width: 5.4rem;
+    height: 6.9rem;
+    padding-top: 1rem;
 }
 
 .eleventh-1 {
     display: flex;
     gap: auto;
     justify-content: space-between;
-}
-
-.eleventh-1-1 {
-    width: 5.4rem;
-    height: 6.9rem;
-    padding-top: 1rem;
 }
 
 .eleventh-2 {
@@ -979,40 +1036,17 @@ footer {
 }
 
 .eleventh-3 {
+    text-align: center;
+}
+
+.eleventh-4 {
     margin-top: 2rem;
     text-align: center;
 }
 
-@media screen and (max-width: 359.9px) {
+@media(min-width: 476px) {
     .second-ul {
-        grid-template-columns: 1fr;
-    }
-
-    .second-li {
-        min-height: 19.7rem;
-    }
-
-    .fifth-ul {
-        grid-template-columns: 1fr;
-    }
-
-    .third-li-6 {
-        flex-direction: column;
-    }
-
-    .sixth-ul {
-        grid-template-columns: 1fr;
-        gap: 0.7rem;
-    }
-
-    .sixth-li {
-        max-width: 34rem;
-    }
-}
-
-@media screen and (max-width: 720px) and (min-width: 360px) {
-    .second-ul {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .second-li {
@@ -1021,7 +1055,7 @@ footer {
     }
 
     .fifth-ul {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .sixth-ul {
@@ -1038,15 +1072,408 @@ footer {
     }
 }
 
-@media screen and (min-width: 721px) and (max-width: 1299px) {
-    .second-section {
-        padding-bottom: 5.4rem;
+@media(min-width: 1023px) {
+    .navigation-header {
+        display: block;
+        align-self: center;
     }
-}
 
-@media screen and (min-width: 1300px) {
-    .sixth-ul {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 3rem;
+    .navigation-ul {
+        display: inline-flex;
+        list-style: none;
+        padding-top: 3rem; 
     }
+
+    .navigation-li {
+        text-align: center;
+    }
+
+    .navigation-a {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--wtext-color);
+        text-decoration: none;
+        display: inline-block;
+        width: 12rem;
+        text-align: center;
+    }
+
+    .navigation-a-1 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--stext-color);
+        text-decoration: none;
+        display: inline-block;
+        width: 15rem;
+        text-align: center;
+        
+    }
+
+    .navigation-phone {
+        display: flex;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--wtext-color);
+        text-decoration: none;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+    }
+
+    .phone {
+        display: inline;
+        text-align: bottom;
+        max-width: 15rem;
+    }
+
+    .telephone {
+        font-size: 1.4rem;
+        font-weight: 600;
+        display: block;
+        padding: 1rem 0.9rem;
+        color: var(--wtext-color);
+        border-radius: 0.9rem;
+        background-color: var(--gtext-color);
+        text-decoration: none;
+    }
+
+    .first-logo {
+        min-width: 11rem;
+        min-height: 14rem;
+        padding: 2rem 0 0;
+    }
+
+    .zero.wrapper {
+        padding: 0 3rem 0;
+        position: relative;
+    }
+
+    .first-butt-burger {
+        display: none;
+    }
+
+    .first-section {
+        background: linear-gradient(0deg, rgba(39, 39, 41, 0.60) 0%, rgba(39, 39, 41, 0.60) 100%),
+        url(../public/pictures/first-back-desktop2k.jfif), lightgray 50% / cover no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+
+    .title {
+        max-width: 600px;
+        font-size: 70px;
+        font-weight: 600;
+        padding-top: 10rem;
+    }
+
+    .wrapper {
+        padding: 0 5rem;
+    }
+
+    .first-section {
+        padding: 14rem 0;
+        max-width: 100%;
+        min-height: 92rem;
+    }
+
+    .second {
+        padding: 0;
+    }
+
+    .second-ul {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 5rem 0;
+    }
+    
+    .third-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+    }
+    
+    .th1 {
+        order: 2;
+        padding: 10rem 0 10rem 15rem;
+    }
+
+    .th2 {
+        order: 1;
+        max-width: 100%;
+        padding: 10rem 0 10rem;
+    }
+
+    .th3 {
+        order: 3;
+        padding: 0 0 10rem 15rem;
+    }
+
+    .th4 {
+        order: 4;
+        max-width: 100%;
+        padding-bottom:10rem;
+    }
+
+    .th5 {
+        padding-left: 15rem;
+    }
+
+    .th6 {
+        max-width: 100%;
+    }
+
+    .third-li-1 {
+        display: flex;
+        display: inline-flex;
+    }
+
+    .third-li-1::after {
+        display: none;
+    }
+
+    .third-li-1::before {
+        content: '';
+        border-top: solid 3px var(--smain-color);
+        width: 7rem;
+        margin-top: 1rem;
+        margin-left: -9rem;
+        position: absolute;
+    }
+
+    .third-li-5 {
+        max-width: 75%;
+    }
+
+    .third-li-7-1-1 {
+        width: 100%;
+        height: 90%;
+    }
+    .third-li-7-1 {
+        width: 200%;
+    }
+
+    .third-li-7-2 {
+        width: 100%;
+    }
+
+    .third-li-8-3 {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        max-height: 1.1rem;
+    }
+
+    .fourth-section-back {
+        background-image: url(../public/pictures/fourth-back-desktop.svg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .fourth-section {
+        padding: 5rem 0 5rem;
+    }
+
+    .fifth-back {
+        background-image: url(../public/pictures/fifth-back.svg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .fifth-ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0 auto;
+        justify-items: center;
+        padding: 0;
+    }
+
+    .fifth-li {
+        width: 100%;
+    }
+
+    .fifth-li-1 {
+        width: 100%;
+    }
+
+    .sixth-section-back {
+        background-image: url(../public/pictures/sixth-back-desktop.svg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .sixth-ul {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        padding: 0;
+    }
+
+    .sixth-li {
+        min-width: 100%;
+    }
+
+    .sixth-li-1 {
+        width: 7%;
+    }
+
+    .sixth-li-2 {
+        padding: 1rem 5rem ;
+    }
+
+    .seventh-back {
+        background-image: url(../public/pictures/seventh-back-desktop.svg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .seventh-title {
+        margin-top: 3rem;
+    }
+
+    .seventh-0 {
+        flex-wrap: nowrap;
+    }
+
+    .seventh-1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .seventh-1-1 {
+        min-height: 23rem;
+    }
+
+    .eighth-section-back {
+        background-image: url(../public/pictures/eighth-back-desktop.svg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .eighth-2 {
+        padding-left: 8rem;
+        order: 2;
+    }
+
+    .eighth-2-1 {
+        height: 60%;
+        width: auto;
+    }
+
+    .eighth-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15rem;
+    }
+
+    .ninth-section-back {
+        background-image: url(../public/pictures/ninth-back-desktop.svg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .ninth-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 25rem;
+        padding-left: 15rem;
+    }
+
+    .ninth-0 {
+        margin-bottom: 5rem;
+    }
+
+    .ninth-3 {
+        margin: 2rem 10rem 3rem;
+    }
+
+    .ninth-5 {
+        display: none;
+        padding: 0;
+    }
+
+    .tenth-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-right: 0;
+    }
+
+    .tenth-1 {
+        content: '';
+        border-top: solid 3px var(--smain-color);
+        position: absolute;
+        padding-top: 1rem;
+        margin-left: 5rem;
+        width: 45%;
+    }
+
+    .tenth-ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 90%;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+    
+    .tenth-li2 {
+        padding-top: 0;
+    }
+
+    .tenth-li3 {
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+
+    .tenth-4 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .tenth-4-1 {
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    .tenth-4-2 {
+        padding-right: 2rem;
+        margin: 0;
+    }
+
+    .tenth-pic {
+        order: 2;
+        width: 100%;
+        height: 85%;
+    }
+
+    .tenth-5 {
+        margin: 0 5rem 0;
+    }
+
+    .eleventh-logo {
+        src: url(../public/pictures/logo-desktop.svg);
+        width: 5.7rem;
+        height: 7.3rem;
+        display: flex;
+        padding: 0;
+    }
+
+    .navigation-footer {
+        align-self: center;
+    }
+
+    .eleventh-ul {
+        display: inline;
+        list-style: none;
+    }
+    
+    .eleventh-li {
+        display: inline;
+    }
+
+    .eleventh-a {
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--btext-color);
+        text-align: center;
+        padding-left: 4rem;
+    }
+    
 }
