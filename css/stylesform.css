@@ -189,6 +189,10 @@ input:focus::placeholder {
     margin-bottom: 1rem;
 }
 
+/* .password-checkbox:active {
+    display: none;
+} */
+
 .email {
     max-width: max-content;
     margin-bottom: 1rem;

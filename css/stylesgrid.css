@@ -233,12 +233,24 @@ header {
     grid-template-rows: repeat(3, 300px);
 }
 
+.dashboard-img-1 {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+    background-color: var(--bmain-color);
+    object-fit: cover;
+}
+
 .dashboard-img {
     width: 100%;
     height: 100%;
     justify-content: center;
     position: relative;
     overflow-x: hidden;
+    background-color: var(--bmain-color);
+    object-fit: cover;
 }
 
 .dashboard-1 {
