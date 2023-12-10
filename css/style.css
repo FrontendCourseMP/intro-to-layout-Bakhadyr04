@@ -79,17 +79,197 @@ html ::selection {
     background-color: var(--stext-color);
 }
 
+a:focus {
+    outline: 2px solid black;
+}
+
+a:hover {
+    transition: all 1s ease;
+}
+
 .navigation-a:hover {
     color: var(--stext-color);
+    background-color: var(--wtext-color);
+    box-shadow: 0 0 10px var(--wtext-color);
 }
 
 .navigation-a-1:hover {
     color: var(--wtext-color);
+    background-color: var(--stext-color);
+    box-shadow: 0 0 10px var(--stext-color);
+}
+
+.navigation-phone:hover {
+    color: var(--stext-color);
+    background-color: var(--wtext-color);
+    box-shadow: 0 0 10px var(--wtext-color);
+}
+
+.telephone:hover {
+    background-color: var(--stext-color);
+    box-shadow: 10px 10px 10px var(--btext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.first-butt-burger:hover {
+    color: var(--stext-color);
+    box-shadow: 0 0 10px var(--wtext-color);
+    transition: all 1s ease;
+}
+
+.first-logo:hover {
+    background-color: var(--btext-color);
+    box-shadow: 0 0 10px var(--wtext-color);
+    transition: all 1s ease;
+}
+
+.first-butt:hover {
+    background-color: var(--mmain-color);
+    transition: all 1s ease;
+    box-shadow: 10px 10px 10px var(--stext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.first-butt-text:hover {
+    color: var(--stext-color);
+    background-color: var(--wtext-color);
+    transition: all 1s ease;
+}
+
+.first-butt-pic:hover {
+    background-color: var(--stext-color);
+    box-shadow: 0 0 10px var(--stext-color);
+    transform: scale(1.1) rotate(1deg);
+    transition: all 0.5s ease;
+}
+
+.scr-1:hover {
+    background-color: var(--stext-color);
+    transition: all 1s ease;
+    box-shadow: 0 0 10px var(--wtext-color);
+    transform: scale(1.1) rotate(1deg);
+    cursor: pointer;
+}
+
+.scr-1:focus {
+    outline: 2px solid black;
+}
+
+.scr-2:hover {
+    background-color: var(--stext-color);
+    transition: all 1s ease;
+    box-shadow: 0 0 10px var(--wtext-color);
+    transform: scale(1.1) rotate(1deg);
+    cursor: pointer;
+}
+
+.scr-2:focus {
+    outline: 2px solid black;
+}
+
+.scr-3:hover {
+    background-color: var(--stext-color);
+    transition: all 1s ease;
+    box-shadow: 0 0 10px var(--wtext-color);
+    transform: scale(1.1) rotate(1deg);
+    cursor: pointer;
+}
+
+.scr-3:focus {
+    outline: 2px solid black;
+}
+
+.third-li-6-1:hover {
+    background-color: var(--stext-color);
+    color: var(--wtext-color);
+    box-shadow: 10px 10px 10px var(--btext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.third-li-6-2:hover {
+    background-color: var(--wtext-color);
+    color: var(--stext-color);
+    box-shadow: 10px 10px 10px var(--stext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.third-li-8-1:hover {
+    background-color: var(--stext-color);
+    transition: all 1s ease;
+    box-shadow: 0 0 10px var(--text-color);
+    transform: scale(1.1) rotate(1deg);
+    cursor: pointer;
+}
+
+.third-li-8-1:focus {
+    outline: 2px solid black;
+}
+
+.fourth-3:hover {
+    background-color: var(--wtext-color);
+    color: var(--stext-color);
+    box-shadow: 10px 10px 10px var(--stext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.seventh-3:hover {
+    background-color: var(--stext-color);
+    color: var(--wtext-color);
+    box-shadow: 10px 10px 10px var(--btext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.eighth-4:hover {
+    background-color: var(--stext-color);
+    color: var(--wtext-color);
+    box-shadow: 10px 10px 10px var(--btext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.ninth-li-butt:hover {
+    background-color: var(--stext-color);
+    color: var(--btext-color);
+    box-shadow: 10px 10px 10px var(--btext-color);
+    transform: scale(1.1) rotate(1deg);
+    transition: all 1s ease;
+}
+
+.ninth-4:hover {
+    background-color: var(--wtext-color);
+    color: var(--stext-color);
+    box-shadow: 10px 10px 10px var(--stext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.tenth-li-2:hover {
+    background-color: var(--stext-color);
+    color: var(--wtext-color);
+    box-shadow: 10px 10px 10px var(--btext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.tenth-4-2:hover {
+    background-color: var(--stext-color);
+    color: var(--wtext-color);
+    box-shadow: 10px 10px 10px var(--btext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.eleventh-logo:hover {
+    background-color: var(--btext-color);
+    box-shadow: 0 0 10px var(--btext-color);
+    transition: all 1s ease;
+}
+
+.eleventh-a:hover {
+    color: var(--wtext-color);
+    background-color: var(--stext-color);
+    box-shadow: 0 0 10px var(--btext-color);
 }
 
 body {
-    font-family: Montserrat, sans-serif;
-    font-size: 1.4 rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
     font-weight: 400;
     color: var(--btext-color);
 }
@@ -435,6 +615,7 @@ footer {
 .third-li-8-1 {
     background-color: var(--bmain-color);
     margin: 0 0.75rem;
+    cursor: pointer;
 }
 
 .third-li-8-2 {
@@ -991,6 +1172,14 @@ footer {
     color: var(--btext-color);
 }
 
+.tenth-li-2-1 {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 130%;
+    text-decoration: none;
+    color: var(--btext-color);
+}
+
 .tenth-li-3-1 {
     color: var(--btext-color);
     margin: 0;
@@ -1216,7 +1405,6 @@ footer {
         display: inline-block;
         width: 15rem;
         text-align: center;
-        
     }
 
     .navigation-phone {
@@ -1731,6 +1919,12 @@ footer {
     }
 
     .tenth-li-2 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 124%;  
+    }
+
+    .tenth-li-2-1 {
         font-size: 1.8rem;
         font-weight: 400;
         line-height: 124%;  
