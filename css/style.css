@@ -632,6 +632,7 @@ footer {
     cursor: pointer;
     max-width: 2px;
     max-height: 2px;
+    color: var(--wtext-color);
 }
 
 .third-li-8-2 {
@@ -1418,6 +1419,7 @@ footer {
         display: inline-block;
         width: 12rem;
         text-align: center;
+        background: rgba(100, 100, 100, 0.3);
     }
 
     .navigation-a-1 {
@@ -1428,6 +1430,7 @@ footer {
         display: inline-block;
         width: 15rem;
         text-align: center;
+        background: rgba(100, 100, 100, 0.3);
     }
 
     .navigation-phone {
@@ -1438,6 +1441,7 @@ footer {
         text-decoration: none;
         margin-bottom: 1rem;
         padding-left: 1rem;
+        background: rgba(100, 100, 100, 0.3);
     }
 
     .phone {
