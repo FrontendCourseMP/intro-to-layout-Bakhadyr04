@@ -79,6 +79,22 @@ html ::selection {
     background-color: var(--stext-color);
 }
 
+.skip-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 10px 15px;
+    color: #ffffff;
+    background: #006356;
+    transform: translateY(-100%);
+}
+
+.skip-link:focus {
+    transform: translateY(20%);
+}
+
+
 a:focus {
     outline: 2px solid black;
 }
@@ -764,7 +780,7 @@ footer {
     justify-items: center;
     gap: 1.5rem;
     padding: 0;
-    padding: 0 1rem  0;
+    padding: 0 1rem 0;
 }
 
 .sixth-li {
@@ -979,6 +995,7 @@ footer {
     padding: 1.5rem;
     width: 25rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    background-color: var(--dgmain-color);
 }
 
 .eighth-2-4 {
@@ -1295,7 +1312,7 @@ footer {
         font-weight: 400;
         src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -1303,7 +1320,7 @@ footer {
         font-weight: 500;
         src: url('../fonts/montserrat-v26-latin-500.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -1311,7 +1328,7 @@ footer {
         font-weight: 600;
         src: url('../fonts/montserrat-v26-latin-600.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -1319,7 +1336,7 @@ footer {
         font-weight: 700;
         src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -1363,7 +1380,7 @@ footer {
         font-weight: 400;
         src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -1371,7 +1388,7 @@ footer {
         font-weight: 500;
         src: url('../fonts/montserrat-v26-latin-500.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -1379,7 +1396,7 @@ footer {
         font-weight: 600;
         src: url('../fonts/montserrat-v26-latin-600.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -1387,7 +1404,7 @@ footer {
         font-weight: 700;
         src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -1404,7 +1421,7 @@ footer {
     .navigation-ul {
         display: inline-flex;
         list-style: none;
-        padding-top: 3rem; 
+        padding-top: 3rem;
     }
 
     .navigation-li {
@@ -1478,7 +1495,7 @@ footer {
 
     .first-section {
         background: linear-gradient(0deg, rgba(39, 39, 41, 0.60) 0%, rgba(39, 39, 41, 0.60) 100%),
-        url(../public/pictures/first-background-desktop.jpg), lightgray 50% / cover no-repeat;
+            url(../public/pictures/first-background-desktop.jpg), lightgray 50% / cover no-repeat;
         background-size: cover;
         width: 100%;
     }
@@ -1582,13 +1599,13 @@ footer {
         grid-template-columns: repeat(4, 1fr);
         padding: 0 1rem 0;
     }
-    
+
     .third-section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 0;
     }
-    
+
     .th1 {
         order: 2;
         padding: 10rem 0 10rem 15rem;
@@ -1608,7 +1625,7 @@ footer {
     .th4 {
         order: 4;
         max-width: 100%;
-        padding-bottom:10rem;
+        padding-bottom: 10rem;
     }
 
     .th5 {
@@ -1687,6 +1704,7 @@ footer {
         width: 100%;
         height: 90%;
     }
+
     .third-li-7-1 {
         width: 200%;
     }
@@ -1940,7 +1958,7 @@ footer {
         padding-top: 8rem;
         padding-bottom: 8rem;
     }
-    
+
     .tenth-li2 {
         padding-top: 0;
     }
@@ -1948,13 +1966,13 @@ footer {
     .tenth-li-2 {
         font-size: 1.8rem;
         font-weight: 400;
-        line-height: 124%;  
+        line-height: 124%;
     }
 
     .tenth-li-2-1 {
         font-size: 1.8rem;
         font-weight: 400;
-        line-height: 124%;  
+        line-height: 124%;
     }
 
     .tenth-li-3-1 {
@@ -2013,7 +2031,7 @@ footer {
         display: inline;
         list-style: none;
     }
-    
+
     .eleventh-li {
         display: inline;
     }
@@ -2043,7 +2061,7 @@ footer {
         font-weight: 400;
         src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -2051,7 +2069,7 @@ footer {
         font-weight: 500;
         src: url('../fonts/montserrat-v26-latin-500.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -2059,7 +2077,7 @@ footer {
         font-weight: 600;
         src: url('../fonts/montserrat-v26-latin-600.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -2067,7 +2085,7 @@ footer {
         font-weight: 700;
         src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -2219,7 +2237,7 @@ footer {
         line-height: 21px;
         padding-right: 2rem;
     }
-    
+
     .ninth-2 {
         font-size: 2.4rem;
         font-weight: 600;
